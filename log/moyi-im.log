@@ -1,0 +1,6 @@
+DEBUG 2015-09-02 23:33:21,346 DatabaseIntrospector.debug(46) | Retrieving column information for table "mybatis.user"
+DEBUG 2015-09-02 23:33:21,377 DatabaseIntrospector.debug(46) | Found column "uid", data type 4, in table "rendmanagementsystem..user"
+DEBUG 2015-09-02 23:33:21,378 DatabaseIntrospector.debug(46) | Found column "user_name", data type 12, in table "rendmanagementsystem..user"
+DEBUG 2015-09-02 23:33:21,379 DatabaseIntrospector.debug(46) | Found column "password", data type 12, in table "rendmanagementsystem..user"
+DEBUG 2015-09-02 23:33:21,379 DatabaseIntrospector.debug(46) | Found column "phone", data type 12, in table "rendmanagementsystem..user"
+DEBUG 2015-09-02 23:33:21,380 DatabaseIntrospector.debug(46) | Found column "create_time", data type 93, in table "rendmanagementsystem..user"

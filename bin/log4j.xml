@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- 控制台信息打印输出日志信息 -->
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="encoding" value="utf-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%p %d %c{1}.%M(%L) | %m%n" />
+		</layout>
+	</appender>
+
+	<!-- 日志文件形式输出日志新 -->
+	<appender name="FILE" class="org.apache.log4j.RollingFileAppender">
+		<param name="encoding" value="utf-8" />
+		<param name="File" value="log/moyi-im.log" />
+		<param name="Append" value="false" />
+		<param name="MaxBackupIndex" value="10" />
+		<param name="MaxFileSize" value="400000KB" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%p %d %c{1}.%M(%L) | %m%n" />
+		</layout>
+	</appender>
+
+	<!-- 定义全局的日志输出级别 -->
+	<root>
+		<level value="DEBUG" />
+		<!-- 引用 -->
+		<appender-ref ref="FILE" />
+		<appender-ref ref="CONSOLE" />
+	</root>
+
+</log4j:configuration>
